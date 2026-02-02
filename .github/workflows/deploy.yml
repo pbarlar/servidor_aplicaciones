@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            cd /home/${{ secrets.USERNAME }}/app
+            cd /home/***/app
             sudo systemctl stop nginx || true
             sudo systemctl stop apache2 || true
             sudo docker-compose down
