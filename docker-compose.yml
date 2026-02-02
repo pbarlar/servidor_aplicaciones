@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:80"
+    restart: always
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always

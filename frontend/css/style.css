@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.semaforo {
+  width: 120px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #333;
+  border-radius: 20px;
+}
+
+.luz {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  background: #555;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.controles button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

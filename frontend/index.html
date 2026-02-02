@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Interactivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Semáforo Interactivo</h1>
+
+    <div class="semaforo">
+        <div id="red" class="luz"></div>
+        <div id="yellow" class="luz"></div>
+        <div id="green" class="luz"></div>
+    </div>
+
+    <div id="backend-message" style="margin-top: 20px; font-weight: bold; color: #333;">
+        Cargando estado del backend...
+    </div>
+
+    <div class="controles">
+        <button onclick="cambiarLuz('red')">Rojo</button>
+        <button onclick="cambiarLuz('yellow')">Amarillo</button>
+        <button onclick="cambiarLuz('green')">Verde</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
